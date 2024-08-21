@@ -40,7 +40,7 @@ In **Section 5.2**, we present the final experimental results, which indicate th
 
 **Response** :  In the latest experiment, we standardized LogCraft with other baseline experiments, sampling only 10% of the log dataset for anomaly detection. For each task, we conducted three experiments and used the average value as the final detection result.
 
-For LogCraft and other baseline algorithms in Section 5, we used the same data settings, specifically selecting 10% of the normal logs through random sampling for training, while the remaining logs were used for detection. Accordingly, we updated Tables 6 to 8 and Figures 3 to 5.
+For LogCraft and other baseline algorithms in Section 5, we used the same data settings, specifically selecting 10% of the normal logs through random sampling for training, while the remaining logs were used for detection. Accordingly, we updated **Tables 6 to 8** and **Figures 3 to 5**.
 
 > For the target set, we randomly selected 10% of the normal logs for model training, with the remainder normal logs and all abnormal logs used for anomaly detection.
 
