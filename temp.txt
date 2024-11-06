@@ -1,0 +1,35 @@
+请你仔细地修改下面这个表格，保证进行操作后不会出现格式的错误
+\begin{table*}[t!]
+\caption{Benchmarking on the Capability of Log Parsing Evaluated in both Coarse-level and Fine-level}
+\centering
+\resizebox{0.9\linewidth}{!} {%
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{l@{\hskip 0.1in}c@{\hskip 0.05in}c@{\hskip 0.1in}c@{\hskip 0.05in}c@{\hskip 0.1in}c@{\hskip 0.05in}c@{\hskip 0.1in}c@{\hskip 0.05in}c@{\hskip 0.1in}c@{\hskip 0.05in}c@{\hskip 0.1in}c@{\hskip 0.05in}c@{\hskip 0.1in}c@{\hskip 0.05in}c@{\hskip 0.1in}||c@{\hskip 0.1in}c@{\hskip 0.05in}c}
+%\begin{tabular}{lcccccccccccccc||ccc}
+\toprule
+\multirow{2}{*}{{\textbf{Methods}}} & \multicolumn{2}{>{\hspace{-1em}\centering}c}{\textbf{HDFS}} & \multicolumn{2}{>{\hspace{-1em}\centering}c}{\textbf{Hadoop}} & \multicolumn{2}{>{\hspace{-1em}\centering}c}{\textbf{Zookeeper}} & \multicolumn{2}{>{\hspace{-1em}\centering}c}{\textbf{BGL}} & \multicolumn{2}{>{\hspace{-1em}\centering}c}{\textbf{HPC}} & \multicolumn{2}{>{\hspace{-1em}\centering}c}{\textbf{Linux}} & \multicolumn{2}{>{\hspace{-1em}\centering}c}{\textbf{Proxifier}} & \multicolumn{2}{c}{\textbf{Avg.}} \\ \cmidrule(l{-0.3em}r{0.8em}){2-3} \cmidrule(l{-0.3em}r{0.8em}){4-5} \cmidrule(l{-0.3em}r{0.8em}){6-7} \cmidrule(l{-0.3em}r{0.8em}){8-9} \cmidrule(l{-0.3em}r{0.8em}){10-11} \cmidrule(l{-0.3em}r{0.8em}){12-13} \cmidrule(l{-0.3em}r{0.8em}){14-15} \cmidrule(lr){16-17}
+& \textbf{RI$^{\mathrm{a}}$} & \textbf{F1} & \textbf{RI} & \textbf{F1} & \textbf{RI} & \textbf{F1} & \textbf{RI} & \textbf{F1} & \textbf{RI} & \textbf{F1} & \textbf{RI} & \textbf{F1} & \textbf{RI} & \textbf{F1} & \textbf{RI} & \textbf{F1}\\
+\midrule
+\addlinespace
+IPLoM \cite{makanju2009clustering} & 0.914 & 0.389 & 0.636 & 0.068 & 0.787 & 0.225 & 0.858 & 0.391 & 0.228 & 0.002 & 0.695 & 0.225 & 0.822 & 0.500 & 0.706 & 0.257 \\
+LKE~\cite{fu2009execution} & 0.861 & 0.424 & 0.150 & 0.198 & 0.787 & 0.225 & 0.848 & 0.379 & 0.119 & 0.381 & 0.825 & 0.388 & 0.379 & 0.309 & 0.567 & 0.329 \\
+LogSig~\cite{tang2011logsig} & 0.872 & 0.344 & 0.651 & 0.050 & 0.787 & 0.225 & 0.806 & 0.333 & 0.119 & 0.002 & 0.715 & 0.146 & 0.559 & 0.339 & 0.644 & 0.206 \\
+FT-tree~\cite{zhang2017syslog} & 0.908 & 0.385 & 0.668 & 0.046 & 0.773 & 0.186 & 0.275 & 0.497 & 0.119 & 0.002 & 0.709 & 0.211 & 0.722 & 0.420 & 0.596 & 0.250 \\
+Spell~\cite{du2016spell} & 0.871 & 0.000 & 0.721 & 0.058 & 0.102 & 0.045 & 0.503 & 0.536 & 0.882 & 0.000 & 0.706 & 0.091 & 0.621 & 0.000 & 0.629 & 0.104 \\
+Drain~\cite{he2017drain} & 0.914 & 0.389 & 0.647 & 0.068 & 0.787 & 0.225 & 0.822 & 0.397 & 0.119 & 0.002 & 0.695 & 0.225 & 0.822 & 0.500 & 0.687 & 0.258 \\
+MoLFI~\cite{messaoudi2018search} & 0.871 & 0.000 & 0.699 & 0.095 & 0.899 & 0.000 & 0.792 & 0.333 & 0.881 & 0.000 & 0.410 & 0.026 & 0.621 & 0.000 & 0.739 & 0.065 \\
+LogParse~\cite{meng2020logparse} & 0.907 & 0.632 & 0.349 & 0.502 & 0.982 & 0.348 & 0.992 & 0.665 & 0.194 & 0.330 & 0.825 & 0.588 & 0.490 & 0.334 & 0.677 & 0.486 \\
+LogStamp~\cite{tao2022logstamp} & 0.954 & 0.523 & 0.927 & 0.594 & 0.992 & 0.275 & 0.984 & 0.818 & 0.949 & 0.434 & 0.760 & 0.658 & 0.811 & 0.438 & 0.911 & 0.534 \\
+%LogPPT \cite{le2023log} & 0.960 & 0.838 & 0.987 & 0.526 & 0.988 & 0.795 & 0.859 & \textbf{0.982} & 0.238 & 0.287 & 0.831 & 0.423 & 0.804 & 0.638 & 0.810 & 0.641 \\
+LogPrompt~\cite{liu2024logprompt} & 0.890 & 0.863 & 0.879 & 0.763 & 0.948 & 0.889 & 0.964 & 0.865 & 0.934 & 0.759 & 0.758 & 0.766 & 0.567 & 0.653 & 0.849 & 0.794 \\
+\hdashline
+\noalign{\vskip 2pt}
+\textbf{LogLM-7B} & \textbf{1.000} & \textbf{0.998} & \textbf{1.000} & \textbf{0.973} & \textbf{1.000} & \textbf{0.995} & \textbf{0.999} & \textbf{0.977} & \textbf{0.999} & \textbf{0.935} & \textbf{0.994} & \textbf{0.934} & \textbf{0.879} & \textbf{0.940} & \textbf{0.982} & \textbf{0.965} \\
+\bottomrule
+\multicolumn{17}{l}{$^{\mathrm{a}}$ \textbf{RI} stands for coarse-level RandIndex. \textbf{F1} stands for fine-level F1-score.} \\
+\end{tabular}
+}
+\label{tab:logParsing_exp}
+\end{table*}
+我需要你完成以下操作：实验数据只保留“HDFS”，“Hadoop”，“Zookeeper”，“Linux”，“Proxifier” 这几列，右侧的平均值列需要重新计算
+请你将修改后的表格的Latex文档返回给我
